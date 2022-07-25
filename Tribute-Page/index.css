@@ -32,3 +32,71 @@ header h1 {
     font-weight: 600;
     text-align: center;
 }
+
+header p {
+    font-size: 24px;
+    font-weight: 300;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .banner {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 60px;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    transition: color .3s;
+}
+
+nav a:hover {
+    color: #fd7397;
+}
+
+.logo {
+    height: 25px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00414b;
+    padding: 80px 20px;
+    min-height: 60vh;
+}
+
+.intro-container h3 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    font-size: 38px;
+}
+
+.intro-content {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
