@@ -14,42 +14,57 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="site-wrapper"></div>
-    <h1>Let Us Know Your Opinion!</h1>
-    <section class="comments-form-wrapper"></section>
-    <form class="comments" action=""></form>
-    <div class="form-item"></div>
-    <label for="firstname">Name:</label>
-    <input
-      type="text"
-      name="firstname"
-      id="firstname"
-      required
-      maxlength="40"
-    />
-    <div class="form-item"></div>
-    <label for="email">Email:</label>
-    <input type="email" name="email" id="email" required maxlength="40" />
+    <div class="site-wrapper">
+      <h1>
+        Who will be Britain’s next prime minister, Rishi Sunak or Liz Truss?
+      </h1>
+      <section class="comments-form-wrapper">
+        <form class="comments" action="">
+          <div class="form-item">
+            <label for="firstname">Name: </label>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              required
+              maxlength="40"
+            />
+          </div>
+          <div class="form-item">
+            <label for="email">Email: </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              maxlength="40"
+            />
+          </div>
 
-    <div class="comment-wrapper"></div>
-    <label for="comment">Comment:</label>
-    <textarea
-      name="comment"
-      id="comment"
-      cols="100"
-      rows="5"
-      required
-    ></textarea>
-    <p class="characters">
-      Character Count : <span id="character-count">0</span> / 140
-    </p>
+          <div class="comment-wrapper">
+            <label for="comment"><b>Comments:</b></label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="100"
+              rows="5"
+              required
+            ></textarea>
+            <p class="characters">
+              <b>Character Count:</b><span id="character-count"> 0</span> / 140
+            </p>
+          </div>
 
-    <div class="form-item"></div>
-    <button type="submit">Submit</button>
+          <div class="form-item">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
 
-    <section class="all-comments">
-      <h2>Comments</h2>
-    </section>
+      <section class="all-comments">
+        <h2>Comments</h2>
+      </section>
+    </div>
 
     <script src="index.js"></script>
   </body>

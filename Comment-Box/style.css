@@ -13,11 +13,147 @@ body {
 
 .site-wrapper {
     padding: 20px;
-    min: height 100vh;
+    min-height: 100vh;
 }
 
 input,
 textarea,
 button {
-    font-family: inherits;
+    font-family: inherit;
+}
+
+section,
+h1 {
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+h1 {
+    padding: 40px;
+    padding-bottom: 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h2 {
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+
+.comments-form-wrapper {
+    border-bottom: 1px solid #9b9b9b;
+    margin-bottom: 20px;
+}
+
+.comments {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 30px;
+}
+
+.form-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.form-item input {
+    padding: 10px 0;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.form-item label {
+    padding-right: 10px;
+}
+
+
+.form-item button {
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    background-color: rgb(107, 107, 233);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-item button:hover {
+    opacity: .8;
+}
+
+.comment-wrapper {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.comment-wrapper textarea {
+    width: 100%;
+    outline: none;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    margin-top: 5px;
+    resize: none;
+}
+
+.comment-wrapper .characters {
+    font-size: 14px;
+    padding-top: 10px;
+    text-align: right;
+}
+
+/* COMMENTS OUTPUT */
+
+.all-comments {
+    height: 350px;
+    overflow-y: scroll;
+    padding-top: 0;
+}
+
+.all-comments::-webkit-scrollbar {
+    width: 10px;
+}
+
+.all-comments::-webkit-scrollbar-track {
+    background: antiquewhite;
+}
+
+.all-comments::-webkit-scrollbar-thumb {
+    background: rgb(143, 71, 71);
+    border-radius: 5px;
+}
+
+.comment-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.name-output {
+    font-weight: 500;
+    background-color: rgb(153, 42, 42);
+    color: white;
+    padding: 0 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.comment-output {
+    font-weight: 300;
+    width: 100%;
+    word-wrap: break-word;
 }
