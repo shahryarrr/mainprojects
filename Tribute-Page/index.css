@@ -100,3 +100,179 @@ nav a:hover {
     gap: 10px;
     justify-content: center;
 }
+
+.intro-box {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.intro-box ul {
+    list-style-type: none;
+}
+
+.intro-box ul li {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.intro-section {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    flex: 0.5;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: white;
+}
+
+.intro-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.intro-section p {
+    letter-spacing: 1px;
+    line-height: 2;
+    font-size: 15px;
+    text-align: center;
+}
+
+.steps {
+    background-color: #d8ffd6;
+    padding: 40px 20px;
+}
+
+.steps-container {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.steps-container h2 {
+    padding: 20px 0;
+}
+
+.steps-container p {
+    padding: 10px 0;
+}
+
+.steps-container li {
+    padding: 10px 0;
+    margin-left: 20px;
+}
+
+.above-footer {
+    background-color: #d8ffd6;
+    padding: 5px;
+    color: black;
+
+}
+
+.above-footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.above-footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center
+}
+
+.above-footer-left h3 {
+    text-decoration: underline;
+}
+
+.above-footer-left a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.above-footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center
+}
+
+.above-footer-right h3 {
+    margin: 0;
+}
+
+.above-footer-right div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer {
+    padding: 15px 0;
+    text-align: center;
+    color: #080808;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background-color: #d8ffd6;
+    border: 7.5px solid #fd7397;
+
+}
+
+@media screen and (max-width:1280px) {
+    .intro-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro-section p {
+        font: size 14px;
+        line-height: 1.25;
+    }
+
+    .above-footer-container {
+        flex-direction: column;
+        gap: 20px 0;
+    }
+
+    nav {
+        gap: 0 20px
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    header h1 {
+        font-size: 38px;
+    }
+
+    header p {
+        font-size: 20px;
+    }
+
+    .intro-container h3 {
+        font-size: 30px
+    }
+}
