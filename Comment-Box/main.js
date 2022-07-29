@@ -19,3 +19,24 @@ function countCharacters() {
     limitExceed = false;
   }
 }
+
+// FORM SUBMIT,
+
+const commentForm = document.querySelector(".comments");
+commentForm.addEventListener("submit", pushComment);
+
+function pushComment(event) {
+  event.preventDefault();
+
+  if (limitExceed === false) {
+    const nameInput = document.getElementById("firstname").value;
+    const commentInput = document.getElementById("comment").value;
+    const commentTemplate = `   <div class="comment-item">
+    <span class="name-output">${nameInput}</span>
+    <p class="comment-output">${commentInput}</p>
+    </div>  `;
+
+    const commentOutput = document.querySelector(".all-comments");
+    commentOutput.innerHTML += commentTemplate;
+  }
+}

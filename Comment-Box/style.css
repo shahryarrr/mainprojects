@@ -131,7 +131,7 @@ h2 {
 }
 
 .all-comments::-webkit-scrollbar-thumb {
-    background: rgb(143, 71, 71);
+    background: rgb(107, 107, 233);
     border-radius: 5px;
 }
 
@@ -144,7 +144,7 @@ h2 {
 
 .name-output {
     font-weight: 500;
-    background-color: rgb(153, 42, 42);
+    background-color: rgb(245, 3, 3);
     color: white;
     padding: 0 5px;
     border-radius: 5px;
