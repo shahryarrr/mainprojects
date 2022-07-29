@@ -22,7 +22,7 @@ a:link {
 
 header {
     background-color: #d8ffd6;
-    border: 16px solid #fd7397;
+    border: 12px solid #fd7397;
     min-height: 40vh;
     padding: 60px 20px;
 }
@@ -102,7 +102,6 @@ nav a:hover {
 }
 
 .intro-box {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 100%;
     max-width: 400px;
     display: flex;
@@ -133,8 +132,7 @@ nav a:hover {
 }
 
 .intro-section {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    flex: 0.5;
+    flex: 0.9;
     border-radius: 10px;
     padding: 40px;
     background-color: white;
@@ -150,7 +148,7 @@ nav a:hover {
     letter-spacing: 1px;
     line-height: 2;
     font-size: 15px;
-    text-align: center;
+    text-align: justify;
 }
 
 .steps {
@@ -170,6 +168,7 @@ nav a:hover {
 
 .steps-container p {
     padding: 10px 0;
+    text-align: justify;
 }
 
 .steps-container li {
@@ -235,7 +234,7 @@ footer {
     justify-content: center;
     font-size: 20px;
     background-color: #d8ffd6;
-    border: 7.5px solid #fd7397;
+    border: 4px solid #fd7397;
 
 }
 
@@ -276,3 +275,7 @@ footer {
         font-size: 30px
     }
 }
+
+a :hover {
+    color: #fd7397;
+    
