@@ -1,11 +1,10 @@
-const descButtons = document.querySelectorAll(
-  ".gallery-item .text-container button"
-);
+const descButtons = document.querySelectorAll(".project-title i");
 for (let i = 0; i < descButtons.length; i++) {
   descButtons[i].addEventListener("click", showDesc);
 }
 
 function showDesc() {
-  this.style.display = "none";
-  this.previousElementSibling.style.display = "block";
+  const projectDesc =
+    this.parentElement.parentElement.querySelector(".project-desc");
+  projectDesc.classList.toggle("open");
 }
