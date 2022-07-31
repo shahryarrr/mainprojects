@@ -1,0 +1,497 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+header.active {
+    background-color: lightyellow;
+}
+
+nav {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+nav .logo {
+    display: flex;
+}
+
+nav .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    transition: color .4s;
+}
+
+nav ul li a:hover {
+    color: crimson;
+}
+
+main {
+    background: url(images/cool-background.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 1rem 0;
+}
+
+main .my-photo {
+    width: 300px;
+    height: 300px;
+
+}
+
+main .my-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+}
+
+main h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+section {
+    background-color: lightyellow;
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+section h3 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.about-img,
+.about-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper {
+    width: 100%;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 300px;
+    object-fit: contain;
+}
+
+.about-text {
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: justify;
+}
+
+.projects-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.project h4 {
+    font-size: 1.5rem;
+}
+
+.project-img {
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+
+
+.project-img a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s;
+}
+
+.project-img img:hover {
+    transform: scale(.9);
+    border-radius: .5rem;
+}
+
+.project-desc,
+.project-title {
+    padding: 1rem;
+    text-align: center;
+}
+
+.project-desc {
+    border-top: 1px solid black;
+}
+
+.contact-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem 0;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-wrapper form .form-element {
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+    padding: .5rem 0;
+}
+
+.contact-wrapper form .form-element.submit {
+    justify-content: flex-end;
+}
+
+.contact-wrapper form label {
+    width: 100px;
+    text-align: right;
+}
+
+.contact-wrapper form #submit {
+    width: 100px;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-wrapper form #submit:hover {
+    opacity: .9;
+}
+
+.contact-wrapper form input,
+.contact-wrapper form textarea {
+    padding: .5rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    background-color: white;
+    font-family: inherit;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    gap: .5rem 0;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 0 .5rem;
+}
+
+footer .social-links a {
+    color: white;
+}
+
+footer .social-links i {
+    font-size: 2rem;
+}
+
+/* CAROUSEL */
+.mega-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls-container {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    padding: 0 5%;
+}
+
+.container {
+    max-width: 850px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container .main-card {
+    display: flex;
+    justify-content: space-evenly;
+    width: 400%;
+    transition: 1s;
+}
+
+.container .main-card .cards {
+    width: calc(100% / 4 - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    justify-content: space-between;
+}
+
+.main-card .cards .card {
+    width: calc(100% / 3 - 10px);
+    background: #fff;
+}
+
+.cards .card .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards .card .content .img {
+    height: 120px;
+    width: 100%;
+}
+
+.card .content .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.card .content .img img:hover {
+    filter: grayscale(0);
+}
+
+.container .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0 10px;
+    margin: 20px;
+}
+
+.control {
+    cursor: pointer;
+    font-size: 40px;
+    color: rgb(71, 71, 71);
+}
+
+.circles {
+    display: flex;
+    margin-top: 20px;
+    gap: 0 10px;
+}
+
+.circles span {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #808080;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.circles span.active {
+    background-color: #d1d1d1;
+}
+
+/* COOKIE POP UP */
+
+.cookie-popup {
+    font-size: 0.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    bottom: -6.25rem;
+    left: 1.25rem;
+    padding: 0.625rem 0.9375rem;
+    box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, .15);
+    line-height: 150%;
+    transition: opacity .5s;
+    opacity: 0;
+    right: none;
+    width: 21.875rem;
+    background: #000;
+    color: #fff;
+}
+
+.cookie-popup--not-accepted {
+    opacity: 1;
+    animation: cookie-popup-in .5s ease forwards;
+}
+
+.cookie-popup--accepted {
+    opacity: 0;
+}
+
+.cookie-popup a {
+    color: skyblue;
+}
+
+.cookie-popup a:visited {
+    color: skyblue;
+    text-decoration: none;
+}
+
+.cookie-popup-actions {
+    flex: 1;
+    text-align: right;
+}
+
+.cookie-popup-actions button {
+    color: orange;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+.cookie-popup-actions button:hover {
+    text-decoration: underline;
+}
+
+@keyframes cookie-popup-in {
+    from {
+        bottom: -6.25rem;
+    }
+
+    to {
+        bottom: 1.25rem;
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    nav .logo img {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    main .hero-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    section h3 {
+        font-size: 2rem;
+    }
+
+
+    .contact-wrapper form .form-element {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-wrapper form label {
+        width: 100%;
+        text-align: left;
+        padding-bottom: .5rem;
+    }
+
+    section {
+        padding: 2rem .5rem;
+    }
+}
